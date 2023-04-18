@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 7</h1>
+    <p>7)Визначати, чи усі ціни більше за 1000</p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [578, 1678, 1678, 1678, 1678, 5678]
+      // перевіряємо, чи задовільняють всі елементи умові (.every)
+      const pricesGreaterThan1000 = priceList.every((price) => price > 1000)
+
+      pricesGreaterThan1000 === true
+        ? alert("В масиві всі ціни більше 1000")
+        : alert("В масиві не всі ціни більше 1000")
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 4</h1>
+    <p>
+      4)Сформувати новий масив, що міститиме значення цін у відсотках стосовно
+      максимального
+    </p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [5678, 1254, 1412, 1542, 100, 199, 1598, 1254, 352]
+      // Максимальна ціна в масиві
+      let priceMax = Math.max(...priceList)
+      // Формуємо новий масив
+      const arrInterestThanMaxValue = priceList.map(
+        (price) => (price * 100) / priceMax
+      )
+
+      // 3.Виведення результату
+      document.write(
+        `Масив цін у відсотках стосовно максимальної ціни - ${arrInterestThanMaxValue} `
+      )
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 10</h1>
+    <p>10)Знайти першу ціну, що більше за 1000</p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [568, 678, 678, 678, 678, 678, 158, 147]
+
+      const firstPricesGreaterThan1000 = priceList.find(
+        (price, index, priceListReff) => price > 1000
+      )
+
+      firstPricesGreaterThan1000 !== undefined
+        ? alert(`Перша ціна, що більше за 1000 - ${firstPricesGreaterThan1000}`)
+        : alert("В масиві немає ціни, що більше за 1000 ")
+    </script>
+  </body>
+</html>

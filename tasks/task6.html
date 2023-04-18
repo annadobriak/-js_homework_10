@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 6</h1>
+    <p>6)Визначити, чи є ціна, що менше 1000</p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [1478, 2678, 78, 1678, 1678, 5678]
+      // перевіряємо, задовільняє хоч один елемент умові (.some)
+      let priceGreaterThan1000 = priceList.some((price) => price < 1000)
+
+      priceGreaterThan1000 === true
+        ? alert("В масиві є ціна, що менше 1000")
+        : alert("В масиві нема ціни, що менше 1000")
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 3</h1>
+    <p>3)Сформувати список з тих цін, які більші за попереднє значення</p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [5678, 1254, 1412, 1542, 100, 199, 1598, 1254, 352]
+
+      let arrListPricesGreaterThanPrevValue = []
+      for (let i = 1; i < priceList.length; i++) {
+        if (priceList[i] > priceList[i - 1])
+          arrListPricesGreaterThanPrevValue.push(priceList[i])
+      }
+      // 3.Виведення результату
+      document.write(
+        `Масив елементів, які більші за попереднє значення - ${arrListPricesGreaterThanPrevValue}`
+      )
+    </script>
+  </body>
+</html>

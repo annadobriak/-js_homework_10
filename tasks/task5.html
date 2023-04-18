@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 5</h1>
+    <p>5)Підрахувати кількість змін цін</p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [5678, 1254, 1412, 1542, 1542, 1542, 1598, 1254, 1542]
+
+      let numberPriceChanges = 0
+      for (let i = 1; i < priceList.length; i++) {
+        if (priceList[i - 1] !== priceList[i]) numberPriceChanges += 1
+      }
+      // 3.Виведення результату
+      document.write(`Кількість змін цін - ${numberPriceChanges}`)
+    </script>
+  </body>
+</html>

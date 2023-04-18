@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 2</h1>
+    <p>
+      2)Сформувати новий масив, у якому є номери(індекси) тільки тих, що більші
+      за 1000 грн.
+    </p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [5678, 1254, 1412, 15422, 100, 199, 1598, 1254, 352]
+      // Формуємо масив
+      let arrayIndexElementsGreaterThan1000 = priceList.reduce(
+        (prevIndexList, price, index) => {
+          if (price > 1000) prevIndexList.push(index)
+          return prevIndexList
+        },
+        []
+      )
+      // 3.Виведення результату
+      document.write(
+        `Масив із індексів елементів, які більші за 1000 грн. - ${arrayIndexElementsGreaterThan1000}`
+      )
+    </script>
+  </body>
+</html>

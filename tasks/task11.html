@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 11</h1>
+    <p>11)Знайти індекс першої ціни, що більше за 1000</p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [568, 678, 578, 678, 678, 578]
+
+      const indexfirstPricesGreaterThan1000 = priceList.findIndex(
+        (price, index, priceListReff) => price > 1000
+      )
+
+      indexfirstPricesGreaterThan1000 !== -1
+        ? alert(
+            `Індекс першої ціни, що більше за 1000 - ${indexfirstPricesGreaterThan1000}`
+          )
+        : alert("В масиві немає ціни, що більше за 1000 ")
+    </script>
+  </body>
+</html>

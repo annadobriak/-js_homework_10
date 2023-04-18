@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 9</h1>
+    <p>9)Підрахувати суму цін, що більше за 1000</p>
+
+    <script>
+      // Дано масив цін
+      const priceList = [5678, 678, 5678, 678, 678, 5678]
+
+      const sumPricesGreaterThan1000 = priceList.reduce((prevsumPrice, price) =>
+        price > 1000 ? prevsumPrice + price : prevsumPrice
+      )
+
+      document.write(
+        `Сумма цін, що більше за 1000 - ${sumPricesGreaterThan1000}`
+      )
+    </script>
+  </body>
+</html>
